@@ -15,13 +15,20 @@
 		<link href="assets/css/main.css" rel="stylesheet" />
 	</head>
 	<body>
-		<div id="todo-list">
+		<div id="todo-list" class="todo__list">
 			<h1>To-Do List</h1>
-			<input type="text" id="new-task" placeholder="New task" />
-			<button id="add-task">Add</button>
-			<div id="tasks">
-				<!-- Les tâches seront ajoutées ici -->
+			<div class="todo__input">
+				<input type="text" id="new-task" class="new-task" placeholder="New task" />
+				<button id="add-task" class="add-task">Add</button>
 			</div>
+			<h2>Tâches à réaliser</h2>
+			<ul id="tasks-to-do" class="tasks">
+				<!-- Les tâches à faire seront ajoutées ici -->
+			</ul>
+			<h2>Tâches terminées</h2>
+			<ul id="tasks-done" class="tasks">
+				<!-- Les tâches terminées seront ajoutées ici -->
+			</ul>
 		</div>
 	</body>
 </html>
